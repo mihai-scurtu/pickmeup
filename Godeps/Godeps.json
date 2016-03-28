@@ -1,0 +1,13 @@
+{
+	"ImportPath": "github.com/mihai-scurtu/pickmeup",
+	"GoVersion": "go1.5",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/mihai-scurtu/reddit-go/reddit",
+			"Rev": "85b72e7999f2b6f423cbcc9cceba7f85f7b39ef6"
+		}
+	]
+}
