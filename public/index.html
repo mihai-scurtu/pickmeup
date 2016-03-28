@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PickMeUp </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
+    <script>
+        function updateEmbed() {
+            $.get('/random').then(function(html) {
+                $('#embed').html(html);
+            });
+        }
+
+        $(function() {
+            updateEmbed();
+        });
+    </script>
+
+    <style>
+        #embed, footer {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        #embed img, #embed video {
+            max-width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="embed"></div>
+    <footer>🦄🐰</footer>
+</body>
+</html>
